@@ -1,0 +1,177 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas{
+  border: 10px solid rgb(255, 0, 0);
+  margin-top:80px;
+  margin-left: 200px;
+}
+
+
+.container {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+
+}
+
+h1, h2, h3, h4, h5, h6, a, p, span {
+  padding-bottom: 0.714em !important;
+  padding-top: 0.714em !important;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center; }
+
+footer {
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  position: fixed;
+  width: 100%;
+  background: #FFE6C9;
+  text-align: center; }
+  footer .content {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 80px; }
+    footer .content .bottom {
+      padding: 0;
+      margin: 0;
+      top: 10%;
+    left:70%; }
+      footer .content .bottom .beat {
+        color: red;
+        animation: beat .30s infinite alternate; }
+    footer .content .top {
+      font-size: 25px; }
+      footer .content .top .fa-github:hover {
+        transition: 350ms ease-in-out;
+        color: #24292E;
+        transform: scale(1.4); }
+      footer .content .top .fa-codepen:hover {
+        transition: 350ms ease-in-out;
+        color: #FFDD40;
+        transform: scale(1.4); }
+         footer .content .top .fa-youtube:hover {
+        transition: 350ms ease-in-out;
+        color: #cd201f;
+        transform: scale(1.4); }
+        footer .content .top .fa-star:hover {
+        transition: 350ms ease-in-out;
+        color: #0de5ec;
+        transform: scale(1.4); }
+      footer .content .top a {
+        padding: 10px; }
+      footer .content .top i {
+        transition: 500ms ease-in-out; }
+
+
+
+
+
+        
+.noselect {
+  user-select: none; }
+
+.artboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 49%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  position: absolute; }
+
+.button {
+  width: 350px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: space-evenly;
+  background: #FFCCBD;
+  text-align: center;
+  font-weight: bold;
+  overflow: hidden;
+  color: #ffffff; }
+  .button .links a {
+    padding: 15px;
+    transition: 700ms cubic-bezier(0.89, 0.03, 0.06, 1.5);
+    color: #ffffff;
+    text-align: center;
+    opacity: 0;
+    text-decoration: none;
+    transform: scale(0); }
+    .button .links a:hover {
+      color: #D6A0D3;
+      transition-timing-function: ease-in-out !important;
+      transition-delay: 1ms !important; }
+    .button .links a:nth-child(5) {
+      transition-delay: 55ms; }
+    .button .links a:nth-child(4) {
+      transition-delay: 110ms; }
+    .button .links a:nth-child(3) {
+      transition-delay: 165ms; }
+    .button .links a:nth-child(2) {
+      transition-delay: 220ms; }
+    .button .links a:nth-child(1) {
+      transition-delay: 275ms; }
+  .button .overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 350px;
+    height: 80px;
+    position: absolute;
+    top: 0em;
+    left: 0em;
+    background: #F0ADA1;
+    transition: 1s cubic-bezier(0.89, 0.03, 0.06, 1.5); }
+    .button .overlay a {
+      transform: scale(1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      opacity: 1;
+      padding: 0;
+      margin: auto;
+      color: #ffffff !important;
+      font-size: 20px; }
+
+.button:hover .links a {
+  transform: scale(1);
+  opacity: 1; }
+
+.button:hover .overlay {
+  transform: translateX(-500px); }
+
+@keyframes beat {
+  to {
+    transform: scale(1.4); } }
+
+

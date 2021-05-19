@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Virtual Pet</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+<script src="sketch.js"></script>
+    <script src="Food.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyADzyh1C0olZUS-L1aelB_jdrlSwGfyVj0",
+    authDomain: "virtual-pet-7cd66.firebaseapp.com",
+    databaseURL: "https://virtual-pet-7cd66-default-rtdb.firebaseio.com",
+    projectId: "virtual-pet-7cd66",
+    storageBucket: "virtual-pet-7cd66.appspot.com",
+    messagingSenderId: "475985820476",
+    appId: "1:475985820476:web:700b291f3f4c0e736abc39"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+  </head>
+  
+<a class="play-btn" onclick="alert('Game Is Paused')"></a>
+<div class="artboard">
+  <div class="button">
+    <div class="links"><a class=" fa fa-github fa-2x" target="_blank" href="https://github.com/divyanshudhruv"></a><a
+        class=" fa fa-codepen fa-2x" target="_blank" href="https://codepen.io/divyanshudhruv"></a>
+      <a class=" fa fa-youtube fa-2x" onclick="Swal.fire({
+  icon: 'info',
+  title: 'I Dont Have A Youtube Channel',
+  showConfirmButton: false,
+  timer: 1500
+})">
+      </a>
+    </div>
+
+    <div class="overlay"><a>Follow Me</a></div>
+  </div>
+</div>
+<footer>
+
+  <div class="content">
+    <div class="top">
+
+
+
+      <a target="_blank" href="https://github.com/divyanshudhruv/"><i class="fa fa-github"></i></a>
+
+      <a target="_blank" href="https://codepen.io/divyanshudhruv"><i class="fa fa-codepen "></i></a>
+
+      <a target="_blank" onclick="Swal.fire({
+  icon: 'info',
+  title: 'I Dont Have A Youtube Channel',
+  showConfirmButton: false,
+  timer: 1500
+})"><i class="fa fa-youtube"></i>
+
+        <a target="_blank" onclick="Swal.fire({
+  title: 'Do you like this game?',
+  showDenyButton: true,
+  showCancelButton: false,
+  confirmButtonText: `Yes`,
+  denyButtonText: `No`,
+  showCloseButton: true
+}).then((result) => {
+  /* Read more about isConfirmed, isDenied below */
+  if (result.isConfirmed) {
+    Swal.fire('Thank You!', '', 'warning')
+  } else if (result.isDenied) {
+    Swal.fire('I will try to solve the issue', '', 'info')
+  }
+})"><i class="fa fa-star"></i></a>
+
+    </div>
+    <div class="bottom"><a>made with <i class="fa fa-heart beat"></i> by <u>Divyanshu Dhruv</u></a></div>
+  </div>
+
+</footer></html>
