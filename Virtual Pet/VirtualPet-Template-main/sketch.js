@@ -1,28 +1,28 @@
-var dog,sadDog,happyDog;
-var ground
-var sun
-var sunI
-var milk,milkImg
-var milk2
-var milk3
-var milk4
-var milk5
-var table,tableSt
-var feedBtn
-var f2
-var f3
-var f4
-var f5
-var addBtn
-var add2
-var add3
-var add4
-var add5
-var moveBox
-var moveBox2
+let dog,sadDog,happyDog;
+let ground
+let sun
+let sunI
+let milk,milkImg
+let milk2
+let milk3
+let milk4
+let milk5
+let table,tableSt
+let feedBtn
+let f2
+let f3
+let f4
+let f5
+let addBtn
+let add2
+let add3
+let add4
+let add5
+let moveBox
+let moveBox2
 
 
-var database, position;
+let database, position;
 
 //===================================================================================================================================
 
@@ -51,7 +51,7 @@ function setup() {
  moveBox=createSprite(0,-100,20,20)
 
   
-  var moveBoxPosition = database.ref("Milk2")
+  let moveBoxPosition = database.ref("Milk2")
 
   moveBoxPosition.on("value", readPosition2, showErr2)
 
@@ -59,7 +59,7 @@ function setup() {
 
 
   moveBox2 = createSprite(0, -200, 20, 20)
-  var moveBox2Position = database.ref("Milk")
+  let moveBox2Position = database.ref("Milk")
   moveBox2Position.on("value", readPosition, showErr)
   
 
@@ -163,8 +163,8 @@ feedBtn.mousePressed(add)
 
 //===============================================================================================================================
 
-  var input = createInput('').attribute('placeholder', 'Name Of The Dog ');
-var inputBtn=createButton("Done")
+  let input = createInput('').attribute('placeholder', 'Name Of The Dog ');
+let inputBtn=createButton("Done")
 input.position(980,440)
 inputBtn.position(1145,440)
 
@@ -172,10 +172,10 @@ inputBtn.position(1145,440)
     input.hide();
     inputBtn.hide();
 
-    var name = input.value();
+    let name = input.value();
 
 
-    var greeting = createElement('h3');
+    let greeting = createElement('h3');
     greeting.html(name)
     greeting.position(1015, 430)
 
@@ -205,7 +205,7 @@ inputBtn.position(1145,440)
       
     }
  
-    var dogTable=createSprite(855,378,110,20)
+    let dogTable=createSprite(855,378,110,20)
     dogTable.shapeColor="cyan"
     
   })
