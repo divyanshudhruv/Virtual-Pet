@@ -469,6 +469,82 @@ function showErr2() {
 
 
 
+console.log("Script loaded");
+
+// setTimeout function to log "foo" after 2 seconds
+setTimeout(() => {
+  console.log("virtual");
+}, 2000);
+
+// setInterval function to log "bar" every 3 seconds
+setInterval(() => {
+  console.log("pet");
+}, 3000);
+
+// Promise function to resolve after 1 second and log "baz"
+const myPromise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("start");
+  }, 1000);
+});
+
+myPromise.then((message) => {
+  console.log(message);
+});
+
+// Implicit type function
+function add(a, b) {
+  return a + b;
+}
+
+console.log(add(5, 10)); // 15
+
+// Explicit type function
+/**
+ * @param {number} a
+ * @param {number} b
+ * @returns {number}
+ */
+function multiply(a, b) {
+  return a * b;
+}
+
+console.log(multiply(5, 10)); // 50
+
+// Inheritance and static functions
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+
+  speak() {
+    console.log(`${this.name} makes a sound`);
+  }
+
+  static info() {
+    console.log("This is an animal class");
+  }
+}
+
+class Dog extends Animal {
+  constructor(name, breed) {
+    super(name);
+    this.breed = breed;
+  }
+
+  speak() {
+    console.log(`${this.name} barks`);
+  }
+
+  static info() {
+    console.log("This is a dog class");
+  }
+}
+
+const dog = new Dog("Buddy", "Golden Retriever");
+dog.speak(); // Buddy barks
+Dog.info(); // This is a dog class
+
 
 
 
