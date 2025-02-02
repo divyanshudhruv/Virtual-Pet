@@ -180,27 +180,27 @@ inputBtn.position(1145,440)
     greeting.position(1015, 430)
 
     //To be used After
-    if (greeting.lenght = 1) {
+    if (greeting.length = 1) {
       greeting.position(1060, 427)
     }
 
-    if (greeting.lenght = 2) {
+    if (greeting.length = 2) {
       greeting.position(1052, 427)
     }
 
- if (greeting.lenght = 3) {
+ if (greeting.length = 3) {
       greeting.position(1044, 427)
     }
 
-    if (greeting.lenght = 4) {
+    if (greeting.length = 4) {
       greeting.position(1036, 427)
     }
 
-    if (greeting.lenght = 5) {
+    if (greeting.length = 5) {
       greeting.position(1028, 427)
     }
 
-    if (greeting.lenght = 6) {
+    if (greeting.length = 6) {
       greeting.position(1020, 427)
       
     }
@@ -429,7 +429,6 @@ function writePosition(x, y) {
 function readPosition(data) {
 
   position = data.val()
-  moveBox.x = moveBox.x
   
 
 }
@@ -454,7 +453,6 @@ function writePosition2(x, y) {
 function readPosition2(data) {
 
   position = data.val()
-  moveBox2.x = moveBox2.x
 
 
 }
