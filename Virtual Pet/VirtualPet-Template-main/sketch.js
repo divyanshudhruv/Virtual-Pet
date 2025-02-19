@@ -44,7 +44,7 @@ function setup() {
 
 
   // Dog Position
-  dog=createSprite(850,270,150,150);
+  let dog=createSprite(850,270,150,150);
   dog.addImage(sadDog);
   dog.scale=0.15;
 
